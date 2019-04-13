@@ -22,6 +22,7 @@ public class SignUp extends AppCompatActivity
     private EditText signUpemail;
     private EditText signUpPassword;
     private EditText confirmPassword;
+    private EditText salary;
     private Button signUpButton;
     private SignUp signUpActivity;
 
@@ -35,12 +36,13 @@ public class SignUp extends AppCompatActivity
         this.signUpPassword = (EditText)this.findViewById(R.id.passwordET);
         this.confirmPassword = (EditText)this.findViewById(R.id.confirmET);
         this.signUpButton = (Button)this.findViewById(R.id.signUpButton);
+        this.salary = (EditText) this.findViewById(R.id.salaryET);
         this.signUpActivity = this;
     }
 
     public void onSignUpButtonPressed (View v)
     {
-        if(signUpemail.getText().toString().equals("") || signUpPassword.getText().toString().equals("") || confirmPassword.getText().toString().equals(""))
+        if(signUpemail.getText().toString().equals("") || signUpPassword.getText().toString().equals("") || confirmPassword.getText().toString().equals("") || firstName.getText().toString().equals("") || lastName.getText().toString().equals("") || salary.getText().toString().equals(""))
         {
             Toast.makeText(signUpActivity, "Enter Information", Toast.LENGTH_SHORT).show();
         }
@@ -56,6 +58,10 @@ public class SignUp extends AppCompatActivity
                         if(task.isSuccessful())
                         {
                             Core.currentUser = mAuth.getCurrentUser();
+                            String sal = salary.getText().toString() ;
+                            Core.salary = Integer.parseInt(sal);
+                            Core.fName = firstName.getText().toString();
+                            Core.lName = lastName.getText().toString();
                             Intent i = new Intent(signUpActivity, MainActivity.class);
                             signUpActivity.startActivity(i);
                         }

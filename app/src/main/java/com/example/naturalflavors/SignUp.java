@@ -19,7 +19,7 @@ public class SignUp extends AppCompatActivity
     private FirebaseAuth mAuth;
     private EditText firstName;
     private EditText lastName;
-    private EditText signUpemail;
+    private EditText signUpEmail;
     private EditText signUpPassword;
     private EditText confirmPassword;
     private EditText salary;
@@ -32,7 +32,7 @@ public class SignUp extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         mAuth = FirebaseAuth.getInstance();
-        this.signUpemail = (EditText)this.findViewById(R.id.emailET);
+        this.signUpEmail = (EditText)this.findViewById(R.id.emailET);
         this.signUpPassword = (EditText)this.findViewById(R.id.passwordET);
         this.confirmPassword = (EditText)this.findViewById(R.id.confirmET);
         this.signUpButton = (Button)this.findViewById(R.id.signUpButton);
@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity
 
     public void onSignUpButtonPressed (View v)
     {
-        if(signUpemail.getText().toString().equals("") || signUpPassword.getText().toString().equals("") || confirmPassword.getText().toString().equals("") || firstName.getText().toString().equals("") || lastName.getText().toString().equals("") || salary.getText().toString().equals(""))
+        if(signUpEmail.getText().toString().equals("") || signUpPassword.getText().toString().equals("") || confirmPassword.getText().toString().equals("") || firstName.getText().toString().equals("") || lastName.getText().toString().equals("") || salary.getText().toString().equals(""))
         {
             Toast.makeText(signUpActivity, "Enter Information", Toast.LENGTH_SHORT).show();
         }
@@ -50,7 +50,7 @@ public class SignUp extends AppCompatActivity
         {
             if(signUpPassword.getText().toString().equals(confirmPassword.getText().toString()))
             {
-                mAuth.createUserWithEmailAndPassword(signUpemail.getText().toString(), signUpPassword.getText().toString()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+                mAuth.createUserWithEmailAndPassword(signUpEmail.getText().toString(), signUpPassword.getText().toString()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
                 {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task)

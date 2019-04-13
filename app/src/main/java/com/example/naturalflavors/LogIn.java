@@ -30,7 +30,7 @@ public class LogIn extends AppCompatActivity
         mAuth = FirebaseAuth.getInstance();
         if (Core.currentUser != null)
         {
-            Intent i = new Intent(logInActivity, MainActivity.class);
+            Intent i = new Intent(logInActivity, LandingPage.class);
             logInActivity.startActivity(i);
         }
         else
@@ -57,7 +57,7 @@ public class LogIn extends AppCompatActivity
                     {
                         // Sign in success, update UI with the signed-in user's information
                         Core.currentUser = mAuth.getCurrentUser();
-                        Intent i = new Intent(logInActivity, MainActivity.class);
+                        Intent i = new Intent(logInActivity, LandingPage.class);
                         logInActivity.startActivity(i);
                     }
                     else

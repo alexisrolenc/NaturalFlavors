@@ -14,6 +14,14 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="91dp">
 
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="30sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,7 +150,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="67dp"
             android:orientation="horizontal">
 
             <TextView
@@ -167,9 +175,10 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/signUpButton"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Sign Up" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

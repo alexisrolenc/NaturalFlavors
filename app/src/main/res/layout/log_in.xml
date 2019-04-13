@@ -83,6 +83,7 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:gravity="left|center_vertical"
+                    android:onClick="onCreateAccountButtonPressed"
                     android:text="Create Account"
                     android:textColor="#1B4AD8" />
             </LinearLayout>

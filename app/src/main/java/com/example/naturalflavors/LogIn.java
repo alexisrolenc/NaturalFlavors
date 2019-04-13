@@ -20,4 +20,10 @@ public class LogIn extends AppCompatActivity
         Intent i = new Intent (this, MainActivity.class);
         this.startActivity(i);
     }
+
+    public void onCreateAccountButtonPressed (View v)
+    {
+        Intent i = new Intent (this, SignUp.class);
+        this.startActivity(i);
+    }
 }

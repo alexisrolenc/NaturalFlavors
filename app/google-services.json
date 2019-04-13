@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "462987034342",
+    "firebase_url": "https://naturalflavors-f5d5c.firebaseio.com",
+    "project_id": "naturalflavors-f5d5c",
+    "storage_bucket": "naturalflavors-f5d5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462987034342:android:1936cb233a6722b0",
+        "android_client_info": {
+          "package_name": "com.example.naturalflavors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462987034342-5a34lmju48i67g496ig2mipqs5bvtf2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.naturalflavors",
+            "certificate_hash": "799f624720cef7bfdd80f0e3c40e1ed7125566c3"
+          }
+        },
+        {
+          "client_id": "462987034342-6p135totflntogav71n4bsl00i5a5e9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUY_8Bsnt0vkzRoRG8equ3-FIdAlWH9ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462987034342-6p135totflntogav71n4bsl00i5a5e9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

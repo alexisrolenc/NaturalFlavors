@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Expenses extends AppCompatActivity
-{
+public class Expenses extends AppCompatActivity {
     private EditText mortgage;
     private EditText car;
     private EditText loan;
@@ -22,11 +21,11 @@ public class Expenses extends AppCompatActivity
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses);
 
+        /*
         this.mortgage = (EditText)this.findViewById(R.id.mortgageET);
 
         this.car = (EditText)this.findViewById(R.id.carET);
@@ -68,8 +67,8 @@ public class Expenses extends AppCompatActivity
         String loans = loan.getText().toString() ;
         Core.loans = Integer.parseInt(loans);
 
-        String utilitie = utilities.getText().toString() ;
-        Core.utilities = Integer.parseInt(utilitie);
+        String utilities = utilities.getText().toString() ;
+        Core.utilities = Integer.parseInt(utilities);
 
         String foods = food.getText().toString() ;
         Core.food = Integer.parseInt(foods);
@@ -99,4 +98,7 @@ public class Expenses extends AppCompatActivity
         Intent i = new Intent (this, MonthOverview.class);
         this.startActivity(i);
     }
+    */
+    }
 }
+

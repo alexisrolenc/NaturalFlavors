@@ -3,6 +3,9 @@ package com.example.naturalflavors;
 import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import android.widget.TextView;
 
 public class Core
@@ -11,6 +14,18 @@ public class Core
     static Integer salary;
     static String fName;
     static String lName;
+    static String mortgage;
+    static String loans;
+    static String car;
+    static String utilities;
+    static String food;
+    static String gas;
+    static String misc;
+    static int totalExpenses;
+
+
+    static FirebaseDatabase database = FirebaseDatabase.getInstance();
+    static DatabaseReference mDatabase = database.getReference();
 
     static TextView janBalance, febBalance, marBalance, aprBalance, mayBalance, junBalance, julBalance,
             augBalance, sepBalance, octBalance, novBalance, decBalance;

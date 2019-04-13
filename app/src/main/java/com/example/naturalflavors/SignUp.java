@@ -62,9 +62,12 @@ public class SignUp extends AppCompatActivity
                         {
                             Core.currentUser = mAuth.getCurrentUser();
                             String sal = salary.getText().toString() ;
-                            //Core.salary = Integer.parseInt(sal);
-                            //Core.fName = firstName.getText().toString();
-                            //Core.lName = lastName.getText().toString();
+                            Core.salary = Integer.parseInt(sal);
+                            Core.fName = firstName.getText().toString();
+                            Core.lName = lastName.getText().toString();
+
+
+
                             Intent i = new Intent(signUpActivity, LandingPage.class);
                             signUpActivity.startActivity(i);
                         }
@@ -81,5 +84,22 @@ public class SignUp extends AppCompatActivity
                 Toast.makeText(signUpActivity, "Passwords don't match!", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public void setupUser(String fname, String lname, String email, int salary)
+    {
+        char f = 'c';
+        for(int i = 0; i < 1; i++)
+        {
+            f = fname.charAt(i);
+        }
+        String s = String.valueOf(f);
+        String userName = s + lastName + salary;
+        String fullName = fname + " " + lastName;
+
+        User user = new User(userName, fullName, email, salary);
+
+        Core.mDatabase.child("users").child(userName).setValue(user);
+
     }
 }

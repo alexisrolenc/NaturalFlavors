@@ -77,14 +77,15 @@
                     android:gravity="right|center_vertical"
                     android:text="Don't have an account?        " />
 
-                <Button
+                <TextView
                     android:id="@+id/createAcctButton"
                     android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:gravity="left|center_vertical"
                     android:onClick="onCreateAccountButtonPressed"
-                    android:text="Create Account"
+                    android:clickable="true"
+                    android:text="Sign Up!"
                     android:textColor="#1B4AD8" />
             </LinearLayout>
 

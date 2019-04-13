@@ -36,6 +36,9 @@ public class SignUp extends AppCompatActivity
         this.signUpPassword = (EditText)this.findViewById(R.id.passwordET);
         this.confirmPassword = (EditText)this.findViewById(R.id.confirmET);
         this.signUpButton = (Button)this.findViewById(R.id.signUpButton);
+        this.firstName = (EditText)this.findViewById(R.id.fNameET);
+        this.lastName = (EditText)this.findViewById(R.id.lNameET);
+
         this.salary = (EditText) this.findViewById(R.id.salaryET);
         this.signUpActivity = this;
     }
@@ -59,9 +62,9 @@ public class SignUp extends AppCompatActivity
                         {
                             Core.currentUser = mAuth.getCurrentUser();
                             String sal = salary.getText().toString() ;
-                            Core.salary = Integer.parseInt(sal);
-                            Core.fName = firstName.getText().toString();
-                            Core.lName = lastName.getText().toString();
+                            //Core.salary = Integer.parseInt(sal);
+                            //Core.fName = firstName.getText().toString();
+                            //Core.lName = lastName.getText().toString();
                             Intent i = new Intent(signUpActivity, LandingPage.class);
                             signUpActivity.startActivity(i);
                         }

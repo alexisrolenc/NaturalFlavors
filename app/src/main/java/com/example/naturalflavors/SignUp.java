@@ -77,9 +77,6 @@ public class SignUp extends AppCompatActivity
             {
                 Toast.makeText(signUpActivity, "Passwords don't match!", Toast.LENGTH_SHORT).show();
             }
-
         }
     }
-
-
 }

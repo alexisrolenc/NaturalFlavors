@@ -6,4 +6,171 @@
     android:layout_height="match_parent"
     tools:context=".LandingPage">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Monthly Overview"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/janBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="January" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/febBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="February" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/marBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="March" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/aprBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="April" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/mayBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="May" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/junBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="June" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/julBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="July" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/augBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="August" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/sepBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="September" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/octBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="October" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/novBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="November" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="20dp" />
+
+                    <Button
+                        android:id="@+id/decBT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="December" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

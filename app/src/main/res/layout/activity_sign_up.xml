@@ -178,6 +178,7 @@
             android:id="@+id/signUpButton"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
+            android:onClick="onSignUpButtonPressed"
             android:text="Sign Up" />
 
     </LinearLayout>

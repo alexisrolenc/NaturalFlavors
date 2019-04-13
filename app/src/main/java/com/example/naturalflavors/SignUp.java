@@ -62,9 +62,9 @@ public class SignUp extends AppCompatActivity
                         {
                             Core.currentUser = mAuth.getCurrentUser();
                             String sal = salary.getText().toString() ;
-                            //Core.salary = Integer.parseInt(sal);
-                            //Core.fName = firstName.getText().toString();
-                            //Core.lName = lastName.getText().toString();
+                            Core.salary = Integer.parseInt(sal);
+                            Core.fName = firstName.getText().toString();
+                            Core.lName = lastName.getText().toString();
                             Intent i = new Intent(signUpActivity, LandingPage.class);
                             signUpActivity.startActivity(i);
                         }

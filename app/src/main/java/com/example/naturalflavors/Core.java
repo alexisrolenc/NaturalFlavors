@@ -10,6 +10,14 @@ public class Core
     static Integer salary;
     static String fName;
     static String lName;
+    static Integer mortgage;
+    static Integer car;
+    static Integer loans;
+    static Integer utilities;
+    static Integer food;
+    static Integer gas;
+    static Integer misc;
+    static int totalExpenses;
 
 
 }

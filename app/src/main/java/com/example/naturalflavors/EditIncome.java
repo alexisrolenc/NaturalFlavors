@@ -1,5 +1,6 @@
 package com.example.naturalflavors;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -127,5 +128,12 @@ public class EditIncome extends AppCompatActivity
             Toast.makeText(EditIncomeActivity,"Cannot add anymore income fields", Toast.LENGTH_LONG);
         }
         buttonClickCount = buttonClickCount + 1;
+    }
+
+    public void doneButtonPressed (View v)
+    {
+        Intent i = new Intent(this, MonthController.class);
+        this.startActivity(i);
+
     }
 }

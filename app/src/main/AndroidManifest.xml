@@ -16,8 +16,9 @@
         <activity android:name=".EditProfile" />
         <activity android:name=".Profile" />
         <activity android:name=".SignUp" />
-        <activity android:name=".LandingPage" />
+        <activity android:name=".MonthController" />
         <activity android:name=".LogIn">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

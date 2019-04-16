@@ -29,6 +29,7 @@ public class MonthOverview extends AppCompatActivity
         this.monthlyExpenseAmountTV = (TextView)this.findViewById(R.id.monthlyExpenseAmountTV);
         this.editIncomeButton = (Button)this.findViewById(R.id.editIncomeButton);
         this.editExpenseButton = (Button)this.findViewById(R.id.editExpenseButton);
+
     }
 
 

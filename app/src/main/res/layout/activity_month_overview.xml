@@ -146,12 +146,14 @@
                 android:id="@+id/editIncomeButton"
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
+                android:onClick="onEditIncomeButtonPressed"
                 android:text="Edit Income" />
 
             <Button
                 android:id="@+id/editExpenseButton"
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
+                android:onClick="onEditExpenseButtonPressed"
                 android:text="Edit Expenses" />
 
         </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.naturalflavors;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -105,61 +106,73 @@ public class MonthController extends AppCompatActivity
 
     public void janButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void febButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void marButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void aprButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void mayButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void junButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void julButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void augButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void sepButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void octButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void novButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 
     public void decButtonClicked(View v)
     {
-
+        Intent i = new Intent(this,MonthOverview.class);
+        this.startActivity(i);
     }
 }//class

@@ -11,16 +11,16 @@ import android.widget.TextView;
 public class Core
 {
     static FirebaseUser currentUser;
-    static Integer salary;
+    static int salary;
     static String fName;
     static String lName;
-    static String mortgage;
-    static String loans;
-    static String car;
-    static String utilities;
-    static String food;
-    static String gas;
-    static String misc;
+    static int mortgage;
+    static int loans;
+    static int car;
+    static int utilities;
+    static int food;
+    static int gas;
+    static int misc;
     static int totalExpenses;
 
 
